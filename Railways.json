@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "maven",
+    "buildCommand": "mvn clean install"
+  },
+  "run": {
+    "startCommand": "java -jar target/mysql-connector-j-8.0.32.jar"
+  }
+}
