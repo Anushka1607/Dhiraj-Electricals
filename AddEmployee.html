@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="addEmployee.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+    
+    <main>
+        <!-- Back Button -->
+        <div class="addEmployeeBack">
+            <a href="Admin.html">
+                <i class='bx bx-arrow-back'></i>
+            </a>
+        </div>
+        
+        <!-- Add Employee Form -->
+        <div class="add-employee">
+            <h1>Add New Employee</h1>
+            <form action="EmployeeMain" method="post" id="employeeForm">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name" placeholder = "Enter Full Name" required/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input type="date" name="DOB" required /></td>
+                    </tr>
+                    
+                    <tr>
+				    <td>Salary:</td>
+				    <td><input type="number" name="salary" min="1" step="1" required /></td>
+				</tr>
+                    
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email"  /></td>
+                    </tr>
+                    
+                    <tr>
+				    	<td>Contact Number:</td>
+				    	<td><input type="tel" name="contactno" required /></td>
+					</tr>
+                    
+                    <tr>
+                        <td>Address:</td>
+                        <td><input type="text" name="address" required /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Date of Joining:</td>
+                        <td><input type="date" name="DOJ" required /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Save Employee" /></td>
+                    </tr>
+                    
+                </table>
+            </form>
+            
+            <br>
+            	<a href="ViewEmployee">View Employees</a>
+        </div>
+    </main>
+    
+    <div id="footer-container"></div>
+    <script src="index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="addProduct.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+    
+    <main>
+        <!-- Back Button -->
+        <div class="addProductBack">
+            <a href="Admin.html">
+                <i class='bx bx-arrow-back'></i>
+            </a>
+        </div>
+        
+        <!-- Add Product Form -->
+        <div class="add-product">
+            <h1>Add New Product</h1>
+            <form action="ProductMain" method="post" id="productForm">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="pName" required /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Price:</td>
+                        <td><input type="number" name="pPrice" min="1" step="1"required /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Category:</td>
+                        <td><input type="text" name="pCategory" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Quantity:</td>
+                        <td><input type="number" name="pQty" min="0" step="1" required /></td>
+                    </tr>
+           
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Save Product"/></td>
+                    </tr>
+                    
+                </table>
+            </form>
+            
+            <br>
+            	<a href="ViewProduct">View Products</a>
+        </div>
+    </main>
+    
+    <div id="footer-container"></div>
+    <script src="index.js"></script>
+    
+</body>
+</html>

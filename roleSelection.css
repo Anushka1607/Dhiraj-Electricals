@@ -1,0 +1,171 @@
+
+
+/* Role Selection */
+.container {
+    width: 100%;
+    height: 500px;
+    max-width: 500px;
+    margin: 150px auto;
+    padding: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Welcome Card */
+.welcome-card {
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 15px;
+    height: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+b {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    size: 100px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.role-button {
+    background-color: #5B2333;
+    font-size: 18px;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    height: 60px;
+    width: 300px;
+}
+
+.role-button:hover {
+    background-color: #491C29;
+    transform: scale(1.05);
+}
+
+.role-button:focus-visible {
+    outline: 2px solid #491C29;
+    outline-offset: 4px;
+}
+
+/* Password Field for Admin and Worker */
+.password-card {
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.password-card input {
+    height: 60px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 3px solid #686262;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+.password-card button {
+    height: 60px;
+    width: 300px;
+    padding: 15px;
+    background-color: #5B2333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.password-card button:hover {
+    background-color: #491C29;
+    transform: scale(1.05);
+}
+
+.password-card button:focus-visible {
+    outline: 2px solid #491C29;
+    outline-offset: 4px;
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+.password-card {
+    position: relative;
+}
+
+.password {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 36%;
+    right: 79px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #5B2333;
+    cursor: pointer;
+}
+
+  /* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .welcome-card {
+        height: auto;
+        padding: 15px;
+    }
+
+    .password-card {
+        height: auto;
+        padding: 15px;
+    }
+
+    .role-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .role-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+}

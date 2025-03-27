@@ -1,0 +1,103 @@
+
+
+/* Customer Page */
+
+/* Back Button */
+.customerBack {
+	margin-top: 100px;
+	margin-left: 400px;
+	margin-bottom: 50px;
+}
+
+.customerBack a {
+    color: #000;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.bx-arrow-back {
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.customerBack a:hover .bx-arrow-back {
+    transform: translateX(-5px);
+}
+
+/* Main Container */
+.customer-container{
+    width: 100%;
+    height: 400px;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-opt{
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 15px;
+    height: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.show-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    size: 100px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.select-button {
+    background-color: #5B2333;
+    font-size: 18px;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    height: 60px;
+    width: 300px;
+}
+
+.select-button:hover {
+    background: #491C29;
+    transform: scale(1.05);
+}
+
+.select-button:focus-visible {
+    outline: 3px solid #491C29;
+    outline-offset: 4px;
+}
+
+/* Typography */
+.customerH1 {
+      font-size: 36px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1px;
+}
+
+.f{
+	text-decoration: none;
+}
+
+
+
+

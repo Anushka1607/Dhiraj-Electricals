@@ -1,0 +1,211 @@
+
+
+.bx-arrow-back {
+    color: #000;
+    font-size: x-large;
+  }
+
+.addProductBack{
+    margin-top: 100px;   
+    margin-left: 400px;
+    margin-bottom: 50px;
+  }
+
+
+/* Add Product Form*/
+
+.add-product {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    max-width: 500px; 
+    width: 100%; 
+}
+
+.add-product h1 {
+    font-family: "Achme Gothic";
+    font-weight: 800;
+    color: #5B2333; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px; 
+}
+
+
+/* Table */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form td {
+    padding: 8px; 
+    vertical-align: middle;
+}
+
+form td:first-child {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px; 
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"]
+ {
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px; 
+    font-family: "Achme Gothic";
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus
+{
+    border-color: #5B2333; 
+    outline: none;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    background-color: #5B2333; 
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px; 
+    font-family: "Achme Gothic";
+    transition: background-color 0.3s ease;
+    width: 100%; 
+    height: 60px;
+    margin-top: 10px; 
+}
+
+form input[type="submit"]:hover {
+    background-color: #491C29; 
+}
+
+/* View Product Link */
+.add-product a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #5B2333; 
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Achme Gothic";
+    transition: color 0.3s ease;
+}
+
+.add-product a:hover {
+    color: black; 
+}
+
+
+/** View Product Servlet **/
+.header{
+	width:100%;
+	display:flex;
+	margin-bottom: 10px;
+	margin-top:40px;
+	margin-bottom:50px;
+	
+}
+
+.header h1{
+	margin-left: 480px;
+	margin-top: 20px;
+}
+
+.header a{
+	margin-left: 50px;
+	margin-top: 20px;
+	justify-content:left;
+	text-decoration:none;
+	font-size: 20px;
+	font-weight: 500;
+	color: #5B2333;
+}
+
+.producttable{
+	display:flex;
+	justify-content:center;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.table table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table th{
+    position: sticky;
+    background-color: #AD9199;;
+    text-align: center;
+    font-size: 18px;
+    padding:10px;
+    top:0;
+    left:0;
+}
+
+.table td{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: var(--border);
+    background-color: white ;
+    font-size: 18px;
+}
+
+.bxs-trash {
+	color: black;
+	margin-left: 5px;
+}
+
+.bxs-edit {
+	color: black;
+	margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-product {
+        padding: 15px; 
+    }
+
+    .add-product h1 {
+        font-size: 24px; 
+        margin-left: 20px;
+    }
+
+    form td:first-child {
+        text-align: left;
+    }
+
+    form input[type="text"],
+    form input[type="number"]
+     {
+        font-size: 14px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+    }
+
+  .add-product  a {
+        font-size: 14px;
+    }
+    
+    .header h1{
+		margin-left: 50px;
+	}
+}
